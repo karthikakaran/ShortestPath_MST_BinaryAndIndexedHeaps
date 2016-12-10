@@ -1,0 +1,65 @@
+<HEAD>
+<TITLE>IDSA: MP3</TITLE>
+</HEAD>
+<BODY>
+<PRE>
+CS 4V95.003, CS 5V81.012.  Implementation of data structures and algorithms
+Fall 2016;  Fri, Oct 21
+Mandatory Project 3: Indexed heaps
+
+Ver 1.0: Initial description (Oct 21, 9:30 AM).
+Ver 1.1: Part e (TSP) is optional for all students (Nov 1).
+Ver 1.2: Change declaration of pq to "Object[] pq;" in BinaryHeap.java
+
+
+This is a mandatory project, to be done individually. 
+Max excellence credits (EC): 1.0 
+Only submissions before 1st deadline are eligible for EC.
+
+<B>Due: 11:59 PM, Sun, Nov 13 (1st deadline),  Sun, Nov 27 (2nd deadline).</B>
+
+Code base: Java library, <A HREF="http://www.utdallas.edu/~rbk/teach/2016f/java/code/pq.zip">pq.zip</A>
+Do not use code from outside sources.
+
+<B>Project Description</B>
+Implement the following:
+(a) Indexed priority queues,
+(b) Prim1 (priority queue of edges; using Java's priority queues),
+(c) Prim2 (priority queue of vertices, using indexed heaps),
+(d) Dijkstra'a algorithm for shortest paths using indexed heaps,
+(e) [Optional]: Approximation algorithm for TSP (to be discussed in class).
+
+Compare the performance of Prim1 and Prim2 on large, dense graphs (e.g., 1M nodes, 100M edges).
+Excellence credit for part (e) will depend on the quality of the solution obtained in 30 sec.
+
+<B>Input and Output</B>
+An undirected graph is given as input, in the format expected by
+readGraph method.  After the graph, two vertices, s and t are specified.
+Do not modify the driver program given.  Write your own driver for (b) and (e).
+Use the same input format for all parts.
+
+Sample input (file "in"):
+5 7
+1 5 8
+1 4 7
+1 3 6
+4 3 3
+3 5 6
+5 3 2
+5 2 1
+1 2
+---------
+Last line of input: s = 1, t = 2.
+Prim's algorithm is run with source as s.
+Dijkstra's algorithm is run with s as source and distance to t is printed.
+A second optional parameter, given in the command line, controls which program
+is called, and whether verbose output is printed.  
+
+Output (if run as "java Driver in 0":
+MST: 12
+Distance: 9
+Time: X msec.
+Memory: X MB / XX MB.
+
+</PRE>
+</BODY>
